@@ -3,34 +3,45 @@
 <head>
 	<meta charset="utf-8">
 	<title>AEGOM Podcast</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="player">
 		<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn"></button>
+  			<button onclick="myFunction()" class="dropbtn"></button>
   
-  <div id="myDropdown" class="dropdown-content">
-   <ul id="playlist">
-		<li class="current-song"><a href="https://docs.google.com/uc?export=download&id=1IY7TNmU890yFlesW9P6VGnncU-9_HJiD">Satan un menteur</a></li>
-		<li><a href="https://docs.google.com/uc?export=download&id=11ckYx17TVPPTJOSx_1CpYKRwdXjEc1Ve">Prophetie du Bishop Sakey sur VLR</a></li>
-		<li><a href="https://docs.google.com/uc?export=download&id=17Y7YD_0EhBayRxygjP-SNgLhIxMicMkY">L'Evangile de jean (PREDICATION)</a></li>
-		<li><a href="https://docs.google.com/uc?export=download&id=1Xy8b4eD1Y-QMqMGCNIKR1K1JyGoKi04H"> Se Laisser Toucher par Dieu 1</a></li>
-		<li><a href="https://docs.google.com/uc?export=download&id=13wpWVJegXcpQLzlGR37FTI93tzoF7hIS">Se Laisser Toucher par Dieu 2</a></li>
-	</ul>
-  </div>
-</div>
+  				<div id="myDropdown" class="dropdown-content">
+   					<ul id="playlist">
+						<li class="current-song"><a href="https://docs.google.com/uc?export=download&id=1IY7TNmU890yFlesW9P6VGnncU-9_HJiD" onclick="song1()">Satan est un menteur</a></li>
+						<li><a href="https://docs.google.com/uc?export=download&id=11ckYx17TVPPTJOSx_1CpYKRwdXjEc1Ve" onclick="song2()">Prophetie du Bishop Sakey sur VLR</a></li>
+						<li><a href="https://docs.google.com/uc?export=download&id=17Y7YD_0EhBayRxygjP-SNgLhIxMicMkY" onclick="song3()">L'Evangile de jean (PREDICATION)</a></li>
+						<li><a href="https://docs.google.com/uc?export=download&id=1Xy8b4eD1Y-QMqMGCNIKR1K1JyGoKi04H" onclick="song4()"> Se Laisser Toucher par Dieu 1</a></li>
+						<li><a href="https://docs.google.com/uc?export=download&id=13wpWVJegXcpQLzlGR37FTI93tzoF7hIS" onclick="song5()">Se Laisser Toucher par Dieu 2</a></li>
+					</ul>
+  		</div>
+
+  		<a href="songlistdownlod.html"><button class="btn2"></i></button></a>
+
+	</div>
+	
 
 
 
-		<div class="imgBx" style = "background-image: url('img2.png');
-   background-size: 350px 350px;
-   background-repeat: no-repeat;
-    background-position: center;">
-			
+		<div class="imgBx" style="background-image: url('img2.png'); background-size: 400px 400px; background-repeat: no-repeat; background-position: center;">
+			<p class="title"><b>Now playing<marquee id="songtitle">Satan est un menteur</marquee></b></p>
+
+			<div class="inner-img">
+			<center><img src="img1.png"></center>
+			</div>
+			<p class="ministry"><b>Apostle Georges Olivier Mbazabou Ministry</b></p>
 		</div>
+
+
+
 		<audio src="" controls id="audioPlayer">Sorry, your browser doesn't support html5</audio>
 	</div>
 	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
